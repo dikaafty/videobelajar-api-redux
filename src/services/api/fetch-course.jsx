@@ -24,3 +24,5 @@ const useFetchCourse = (url) => {
 
   return { courses, error, isLoading }
 }
+
+export default useFetchCourse();
