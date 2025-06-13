@@ -123,7 +123,7 @@ const Card = ({ id, isUserCourse = false, idx, children }) => {
 
         <h4 
           className="font-poppins font-semibold text-xl sm:text-2xl leading-[1.2] text-[#3ECF4C]">
-            Rp {courseData[idx].coursePrice || "300K"}
+            Rp {isUserCourse ? courseData[idx].coursePrice : "300K"}
         </h4>
       </div>
 
