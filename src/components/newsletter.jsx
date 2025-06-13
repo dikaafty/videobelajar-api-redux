@@ -1,3 +1,5 @@
 const Newsletter = () => {
-  
+  return (
+
+  );
 }
