@@ -3,3 +3,5 @@ const Container = ({ children, className, style }) => {
     
   );
 }
+
+export default Container;
