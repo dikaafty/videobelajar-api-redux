@@ -20,5 +20,8 @@
 }
 
 @layer components {
-  
+  .active {
+    @apply text-[#F64920] after:content-[""] after:block after:w-13 after:h-1.5 after:bg-[#F64920]
+    after:rounded-[10px] after:absolute after:bottom-0 after:left-0;
+  }
 }
