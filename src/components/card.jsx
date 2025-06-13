@@ -43,5 +43,7 @@ const charImgMap = {
 }
 
 const Card = ({ id, isUserCourse }) => {
-  
+  return (
+    
+  );
 }
