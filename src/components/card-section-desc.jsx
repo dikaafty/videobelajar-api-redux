@@ -3,3 +3,5 @@ const CardSectionDesc = () => {
     
   );
 }
+
+export default CardSectionDesc;
