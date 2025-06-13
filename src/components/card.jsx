@@ -52,7 +52,7 @@ const Card = ({ id, isUserCourse = false, idx, children }) => {
       className="w-full sm:w-96 h-fit bg-white border-1 border-[#3A35411F] rounded-[10px] p-4 sm:p-5
       grid grid-cols-[82px_1fr] grid-rows-[repeat(4,_auto)] gap-2 sm:flex sm:flex-col sm:gap-4">
       <img 
-        src={courseData[idx].courseImg || cardImgMap[id]} 
+        src={isUserCourse ? courseData[idx].courseImg : cardImgMap[id]} 
         alt={`Card Image`}
         className="w-20.5 h-20.5 sm:w-86 sm:h-[193px] rounded-[10px] object-cover max-sm:row-start-1
         max-sm:row-end-3 max-sm:col-start-1 max-sm:col-end-2" 
