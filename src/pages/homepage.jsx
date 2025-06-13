@@ -9,7 +9,7 @@ const Homepage = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-
+    dispatch(setCourse(courses));
   }, []);
 
   return (
