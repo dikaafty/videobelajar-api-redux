@@ -6,6 +6,7 @@
 @theme {
   --font-poppins: "Poppins";
   --font-dm-sans: "DM Sans";
+  --animate-dialog-slide-down: dialog-slide-down 300ms ease-in;
 
   @keyframes dialog-slide-down {
         0% {
