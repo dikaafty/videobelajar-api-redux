@@ -8,3 +8,5 @@ const FooterBottomBar = () => {
     
   );
 }
+
+export default FooterBottomBar;
