@@ -28,3 +28,15 @@ const cardImgMap = {
   8: cardImgEight,
   9: cardImgNine,
 }
+
+const charImgMap = {
+  1: charOne,
+  2: charTwo,
+  3: charThree,
+  4: charFour,
+  5: charFive,
+  6: charSix,
+  7: charSeven,
+  8: charEight,
+  9: charThree,
+}
