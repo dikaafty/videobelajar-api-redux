@@ -7,6 +7,7 @@ const Homepage = () => {
   const COURSE_API = import.meta.env.VITE_COURSE_API;
   const { courses, error, isLoading } = useFetchCourse(COURSE_API);
   const dispatch = useDispatch();
+  const course = useSelector((state) => state.course);
 
   useEffect(() => {
     if(courses) {
