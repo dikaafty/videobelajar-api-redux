@@ -69,7 +69,7 @@ const Card = ({ id, isUserCourse = false, idx, children }) => {
           className="font-dm-sans font-medium text-base leading-[1.4] tracking-[0.2px] text-[#333333AD]
           max-sm:display-none cut-two-lines">
             {
-              courseData[idx].courseDescription || 
+              isUserCourse ? courseData[idx].courseDescription :
               "Mulai transformasi dengan instruktur profesional, harga yang terjangkau, dan kurikulum terbaik"
             }
         </p>
