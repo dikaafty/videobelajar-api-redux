@@ -43,6 +43,8 @@ const charImgMap = {
 }
 
 const Card = ({ id, isUserCourse }) => {
+  const course = useSelector((state) => state.course);
+
   return (
     
   );
