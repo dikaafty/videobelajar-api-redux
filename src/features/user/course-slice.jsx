@@ -50,3 +50,5 @@ export const {
   setCourse, createNewCourse, handleDelete, handleEdit, setSelectedCourse,
   setCourseImg, setCourseTitle, setCourseDescription, setCoursePrice, setIsOpen
 } = courseSlice.actions;
+
+export default courseSlice.reducer;
