@@ -15,3 +15,4 @@ import charFive from "../assets/images/char-five.png";
 import charSix from "../assets/images/char-six.png";
 import charSeven from "../assets/images/char-seven.png";
 import charEight from "../assets/images/char-eight.png";
+import starsRatingImg from "../assets/images/stars-rating.png";
