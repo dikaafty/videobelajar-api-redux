@@ -3,3 +3,5 @@ const CardSectionTabs = () => {
     
   );
 }
+
+export default CardSectionTabs;
