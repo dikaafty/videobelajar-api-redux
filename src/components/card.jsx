@@ -43,7 +43,7 @@ const charImgMap = {
   9: charThree,
 }
 
-const Card = ({ id, isUserCourse = false, idx }) => {
+const Card = ({ id, isUserCourse = false, idx, children }) => {
   const courseData = useSelector((state) => state.course.courseData);
   console.log(courseData);
 
