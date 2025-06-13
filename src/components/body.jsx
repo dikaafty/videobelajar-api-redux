@@ -1,4 +1,4 @@
-const Body = () => {
+const Body = ({ children }) => {
   return (
     
   );
