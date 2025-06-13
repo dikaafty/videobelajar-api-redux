@@ -62,7 +62,7 @@ const Card = ({ id, isUserCourse = false, idx, children }) => {
         <h6 
           className="font-poppins font-semibold text-base sm:text-lg text-[#222325] leading-[1.2]
           max-sm:row-start-1 max-sm:row-end-2 max-sm:col-start-2 max-sm:col-end-3">
-            {courseData[idx].courseTitle || "Big 4 Auditor Financial Analyst"}
+            {isUserCourse ? courseData[idx].courseTitle : "Big 4 Auditor Financial Analyst"}
         </h6>
 
         <p 
