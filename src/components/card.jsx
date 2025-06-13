@@ -16,3 +16,15 @@ import charSix from "../assets/images/char-six.png";
 import charSeven from "../assets/images/char-seven.png";
 import charEight from "../assets/images/char-eight.png";
 import starsRatingImg from "../assets/images/stars-rating.png";
+
+const cardImgMap = {
+  1: cardImgOne,
+  2: cardImgTwo,
+  3: cardImgThree,
+  4: cardImgFour,
+  5: cardImgFive,
+  6: cardImgSix,
+  7: cardImgSeven,
+  8: cardImgEight,
+  9: cardImgNine,
+}
