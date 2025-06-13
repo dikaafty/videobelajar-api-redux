@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useFetchCourse } from "../services/api/fetch-course";
 import { setCourse } from "../features/user/course-slice";
 
