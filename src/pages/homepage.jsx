@@ -12,7 +12,7 @@ const Homepage = () => {
     if(courses) {
       dispatch(setCourse(courses));
     }
-  }, []);
+  }, [courses]);
 
   return (
 
