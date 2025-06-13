@@ -45,3 +45,8 @@ const courseSlice = createSlice({
     },
   }
 });
+
+export const { 
+  setCourse, createNewCourse, handleDelete, handleEdit, setSelectedCourse,
+  setCourseImg, setCourseTitle, setCourseDescription, setCoursePrice, setIsOpen
+} = courseSlice.actions;
