@@ -6,4 +6,14 @@
 @theme {
   --font-poppins: "Poppins";
   --font-dm-sans: "DM Sans";
+
+  @keyframes dialog-slide-down {
+        0% {
+            opacity: 0;
+            top: 40%;
+        } 100% {
+            opacity: 1;
+            top: 50%;
+        }
+    }
 }
