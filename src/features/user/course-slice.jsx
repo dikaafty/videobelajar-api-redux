@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const courseSlice = createSlice({
   name: "course",
   initialState: {
-    course: [],
+    courseData: [],
     selectedCourse: null,
     courseImg: "",
     courseTitle: "",
@@ -13,13 +13,13 @@ const courseSlice = createSlice({
   },
   reducers: {
     setCourse: (state, action) => {
-      state.course = action.payload;
+      state.courseData = action.payload;
     },
     createNewCourse: (state, action) => {
-      state.course.push(action.payload);
+      state.courseData.push(action.payload);
     },
     handleDelete: (state, action) => {
-      state.course.filter(item => item !== action.payload);
+      state.courseData.filter(item => item !== action.payload);
     },
     setSelectedCourse: (state, action) => {
       state.selectedCourse = action.payload;
