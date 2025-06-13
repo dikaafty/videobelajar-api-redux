@@ -44,14 +44,15 @@ const charImgMap = {
 }
 
 const Card = ({ id, isUserCourse = false, idx }) => {
-  const course = useSelector((state) => state.course);
+  const courseData = useSelector((state) => state.course.courseData);
+  console.log(courseData);
 
   return (
     <div 
       className="w-full sm:w-96 h-fit bg-white border-1 border-[#3A35411F] rounded-[10px] p-4 sm:p-5
       grid grid-cols-[82px_1fr] grid-rows-[repeat(4,_auto)] gap-2 sm:flex sm:flex-col sm:gap-4">
       <img 
-        src={course[idx].courseImg || cardImgMap[id]} 
+        src={courseData[idx].courseImg || cardImgMap[id]} 
         alt={`Card Image`}
         className="w-20.5 h-20.5 sm:w-86 sm:h-[193px] rounded-[10px] object-cover max-sm:row-start-1
         max-sm:row-end-3 max-sm:col-start-1 max-sm:col-end-2" 
@@ -61,14 +62,14 @@ const Card = ({ id, isUserCourse = false, idx }) => {
         <h6 
           className="font-poppins font-semibold text-base sm:text-lg text-[#222325] leading-[1.2]
           max-sm:row-start-1 max-sm:row-end-2 max-sm:col-start-2 max-sm:col-end-3">
-            {course[idx].courseTitle || "Big 4 Auditor Financial Analyst"}
+            {courseData[idx].courseTitle || "Big 4 Auditor Financial Analyst"}
         </h6>
 
         <p 
           className="font-dm-sans font-medium text-base leading-[1.4] tracking-[0.2px] text-[#333333AD]
           max-sm:display-none cut-two-lines">
             {
-              course[idx].courseDescription || 
+              courseData[idx].courseDescription || 
               "Mulai transformasi dengan instruktur profesional, harga yang terjangkau, dan kurikulum terbaik"
             }
         </p>
@@ -122,7 +123,7 @@ const Card = ({ id, isUserCourse = false, idx }) => {
 
         <h4 
           className="font-poppins font-semibold text-xl sm:text-2xl leading-[1.2] text-[#3ECF4C]">
-            Rp {course[idx].coursePrice || "300K"}
+            Rp {courseData[idx].coursePrice || "300K"}
         </h4>
       </div>
 
