@@ -5,7 +5,7 @@ import { setCourse } from "../features/user/course-slice";
 
 const Homepage = () => {
   const COURSE_API = import.meta.env.VITE_COURSE_API;
-  const { courses } = useFetchCourse(COURSE_API);
+  const { courses, error, isLoading } = useFetchCourse(COURSE_API);
   const dispatch = useDispatch();
 
   useEffect(() => {
