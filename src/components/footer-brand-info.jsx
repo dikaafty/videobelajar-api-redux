@@ -5,3 +5,5 @@ const FooterBrandInfo = () => {
     
   );
 }
+
+export default FooterBrandInfo;
