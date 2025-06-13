@@ -21,4 +21,6 @@ const useFetchCourse = (url) => {
 
     fetchData();
   }, [url]);
+
+  return { courses, error, isLoading }
 }
