@@ -47,3 +47,5 @@ const Card = ({ id, isUserCourse }) => {
     
   );
 }
+
+export default Card;
