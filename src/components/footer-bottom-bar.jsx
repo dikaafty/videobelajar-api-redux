@@ -4,5 +4,7 @@ import instagramLogo from "../assets/images/instagram-logo.png";
 import twitterLogo from "../assets/images/twitter-logo.png";
 
 const FooterBottomBar = () => {
-  
+  return (
+    
+  );
 }
