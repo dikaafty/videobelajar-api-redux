@@ -26,6 +26,10 @@
   }
 }
 
+@utility display-none {
+  display: none;
+}
+
 .scrollbar-none::-webkit-scrollbar {
   display: none;
 }
