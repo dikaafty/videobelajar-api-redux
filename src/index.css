@@ -25,3 +25,7 @@
     after:rounded-[10px] after:absolute after:bottom-0 after:left-0;
   }
 }
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
