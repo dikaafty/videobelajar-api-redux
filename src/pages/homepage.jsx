@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useFetchCourse } from "./services/api/fetch-course";
 
 const Homepage = () => {
