@@ -3,3 +3,5 @@ const Nav = ({ navText, navList = [] }) => {
 
   );
 }
+
+export default Nav;
