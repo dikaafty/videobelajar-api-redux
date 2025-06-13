@@ -7,6 +7,8 @@ import { courseStore } from "./app/store.jsx";
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <Provider store={courseStore}>
+      <App />
+    </Provider>
   </StrictMode>,
 )
