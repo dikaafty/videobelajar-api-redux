@@ -1,7 +1,7 @@
 import { handleEdit, handleDelete } from "../features/user/course-slice";
 import { useDispatch } from "react-redux";
 
-const CourseActionsBtn = ({ action, item }) => {
+const CourseActionsBtn = ({ action, item, idx }) => {
   const dispatch = useDispatch();
 
   return (
