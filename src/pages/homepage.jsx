@@ -117,6 +117,8 @@ const Homepage = () => {
       </Footer>
 
       <Dialog />
+
+      <AddCourseBtn />
     </>
   );
 }
