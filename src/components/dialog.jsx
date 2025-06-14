@@ -10,6 +10,10 @@ const Dialog = () => {
   const course = useSelector((state) => state.course);
   const dispatch = useDispatch();
 
+  useEffect(() => {
+    
+  }, [course.selectedCourse, course.isOpen]);
+
   return (
     
   );
