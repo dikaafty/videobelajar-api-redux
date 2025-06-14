@@ -72,6 +72,12 @@ const Homepage = () => {
         <Container
           className="w-full flex flex-col lg:flex-row justify-between gap-4 sm:gap-8 lg:gap-5">
             <FooterBrandInfo />
+
+            <Container 
+              className="h-fit flex flex-col sm:flex-row gap-3 sm:gap-12 max-lg:gap-y-8
+              max-lg:flex-wrap max-lg:overflow-y-auto">
+
+            </Container>
         </Container>
       </Footer>
     </>
