@@ -96,6 +96,8 @@ const Homepage = () => {
         </Container>
 
         <Divider />
+
+        <FooterBottomBar />
       </Footer>
     </>
   );
