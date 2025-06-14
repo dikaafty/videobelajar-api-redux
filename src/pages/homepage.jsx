@@ -17,6 +17,7 @@ import Divider from "../components/divider";
 import FooterBottomBar from "../components/footer-bottom-bar";
 import Dialog from "../components/dialog";
 import AddCourseBtn from "../components/add-course-btn";
+import newsletterBackground from "../assets/images/newsletter-background.jpeg";
 
 const Homepage = () => {
   const COURSE_API = import.meta.env.VITE_COURSE_API;
