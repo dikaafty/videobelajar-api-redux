@@ -11,7 +11,17 @@ const Dialog = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    
+    if(course.selectedCourse) {
+      setCourseImg(course.selectedCourse.courseImg);
+      setCourseTitle(course.selectedCourse.courseTitle);
+      setCourseDescription(course.selectedCourse.courseDescription);
+      setCoursePrice(course.selectedCourse.coursePrice);
+    } else {
+      setCourseImg("");
+      setCourseTitle("");
+      setCourseDescription("");
+      setCoursePrice("");
+    }
   }, [course.selectedCourse, course.isOpen]);
 
   return (
