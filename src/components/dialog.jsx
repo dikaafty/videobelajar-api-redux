@@ -11,6 +11,7 @@ const Dialog = () => {
   const dispatch = useDispatch();
 
   const imgPattern = /^https?:\/\/.*\.(?:png|jpg|jpeg|gif|webp|svg)$/;
+  const pricePattern = /^[0-9]+K$/;
 
   useEffect(() => {
     if(course.selectedCourse) {
