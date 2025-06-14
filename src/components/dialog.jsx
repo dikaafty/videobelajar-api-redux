@@ -8,6 +8,7 @@ from "../features/user/course-slice";
 
 const Dialog = () => {
   const course = useSelector((state) => state.course);
+  const dispatch = useDispatch();
 
   return (
     
