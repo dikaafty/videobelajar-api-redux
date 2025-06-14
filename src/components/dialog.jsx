@@ -188,7 +188,7 @@ const Dialog = () => {
                       pricePattern.test(course.coursePrice)
                     ) {
                       if(course.selectedCourse) {
-                        setCourse(
+                        dispatch(setCourse(
                           course.courseData.map((item) => 
                           item === course.selectedCourse ? 
                             {
@@ -200,7 +200,7 @@ const Dialog = () => {
                             } :
                             item
                           )
-                        );
+                        ));
                       } else {
                         dispatch(createNewCourse(newCourse));
 
