@@ -11,3 +11,5 @@ const createPost = async (url, newCourse, setCourses, setError) => {
     setError(err.message);
   }
 }
+
+export default createPost;
