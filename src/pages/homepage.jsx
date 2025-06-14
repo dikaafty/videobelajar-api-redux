@@ -67,6 +67,10 @@ const Homepage = () => {
             <Newsletter />
         </Container>
       </Body>
+
+      <Footer>
+        
+      </Footer>
     </>
   );
 }
