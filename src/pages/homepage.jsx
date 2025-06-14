@@ -76,7 +76,11 @@ const Homepage = () => {
             <Container 
               className="h-fit flex flex-col sm:flex-row gap-3 sm:gap-12 max-lg:gap-y-8
               max-lg:flex-wrap max-lg:overflow-y-auto">
-
+                <Nav 
+                  navText="Kategori" 
+                  navList={["Digital & Teknologi", "Pemasaran",
+                  "Manajemen Bisnis", "Pengembangan Diri", "Desain"]} 
+                />
             </Container>
         </Container>
       </Footer>
