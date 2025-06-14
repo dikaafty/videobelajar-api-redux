@@ -9,3 +9,5 @@ const deleteCourse = async (url, idx, setCourses, setError) => {
     setError(err.message);
   }
 }
+
+export default deleteCourse;
