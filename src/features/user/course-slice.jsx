@@ -19,7 +19,7 @@ const courseSlice = createSlice({
       state.courseData.push(action.payload);
     },
     handleDelete: (state, action) => {
-      state.courseData = state.courseData.filter(item => item !== action.payload);
+      state.courseData.splice(action.payload, 1);
     },
     setSelectedCourse: (state, action) => {
       state.selectedCourse = action.payload;
