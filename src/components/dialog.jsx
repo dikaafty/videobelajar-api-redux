@@ -5,3 +5,7 @@ import {
    setCoursePrice, setSelectedCourse, setIsOpen
   } 
 from "../features/user/course-slice";
+
+const Dialog = () => {
+  
+}
