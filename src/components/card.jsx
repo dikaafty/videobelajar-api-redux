@@ -18,7 +18,6 @@ import charEight from "../assets/images/char-eight.png";
 import starsRatingImg from "../assets/images/stars-rating.png";
 import avatar from "../assets/images/avatar.png";
 import { useSelector } from "react-redux";
-import { useFetchCourse } from "../services/api/fetch-course";
 
 const cardImgMap = {
   1: cardImgOne,
