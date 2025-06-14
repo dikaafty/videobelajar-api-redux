@@ -33,6 +33,10 @@ const Homepage = () => {
   return (
     <>
       <Header />
+
+      <Body>
+        
+      </Body>
     </>
   );
 }
