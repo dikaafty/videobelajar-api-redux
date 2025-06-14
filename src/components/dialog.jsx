@@ -10,6 +10,8 @@ const Dialog = () => {
   const course = useSelector((state) => state.course);
   const dispatch = useDispatch();
 
+  const imgPattern = /^https?:\/\/.*\.(?:png|jpg|jpeg|gif|webp|svg)$/;
+
   useEffect(() => {
     if(course.selectedCourse) {
       setCourseImg(course.selectedCourse.courseImg);
