@@ -11,6 +11,7 @@ import createPost from "../services/api/post-course";
 const Dialog = () => {
   const course = useSelector((state) => state.course);
   const dispatch = useDispatch();
+  const { setCourses, setError } = useRequestStates();
 
   const imgPattern = /^https?:\/\/.*\.(?:png|jpg|jpeg|gif|webp|svg)$/;
   const pricePattern = /^[0-9]+K$/;
