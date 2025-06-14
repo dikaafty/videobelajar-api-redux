@@ -1,4 +1,6 @@
 const Nav = ({ navText, navList = [] }) => {
+  let id = 0;
+
   return (
     <div className="flex flex-col gap-[15px]">
       <p 
