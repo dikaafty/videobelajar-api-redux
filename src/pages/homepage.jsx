@@ -14,6 +14,7 @@ import Footer from "../components/footer";
 import FooterBrandInfo from "../components/footer-brand-info";
 import Nav from "../components/nav";
 import Divider from "../components/divider";
+import FooterBottomBar from "../components/footer-bottom-bar";
 
 const Homepage = () => {
   const COURSE_API = import.meta.env.VITE_COURSE_API;
