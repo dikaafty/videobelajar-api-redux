@@ -1,5 +1,4 @@
 import axios from "axios";
-import useRequestStates from "./request-states";
 
 const createPost = async (url, newCourse, setCourses, setError) => {
   try {
