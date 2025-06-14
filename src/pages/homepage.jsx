@@ -10,6 +10,7 @@ import CardSectionDesc from "../components/card-section-desc";
 import CardSectionTabs from "../components/card-section-tabs";
 import Card from "../components/card";
 import Newsletter from "../components/newsletter";
+import Footer from "../components/footer";
 
 const Homepage = () => {
   const COURSE_API = import.meta.env.VITE_COURSE_API;
