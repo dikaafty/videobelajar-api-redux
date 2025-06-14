@@ -6,7 +6,7 @@ const CourseActionsBtn = ({ action, item }) => {
 
   return (
     <button 
-      onClick={action === "edit" ? () => dispatch(handleEdit(item)) : () => dispatch(handleDelete(item))}
+      onClick={action === "edit" ? () => dispatch(handleEdit(item)) : () => dispatch(handleDelete(item))} // not put or delete to API yet
       className={
         action === "edit" ? "border-1 border-[#3ECF4C] rounded-[10px] py-1.5 px-5 sm:px-6.5 font-dm-sans font-bold text-xs sm:text-base tracking-[0.2px] text-[#3ECF4C] cursor-pointer hover:bg-[#F4F5FA] transition-all duration-300" 
         : "bg-red-500 hover:bg-red-600 rounded-[10px] py-1.5 px-5 sm:px-6.5 font-dm-sans font-bold text-xs sm:text-base tracking-[0.2px] text-white cursor-pointer transition-all duration-300"
