@@ -7,6 +7,8 @@ import {
 from "../features/user/course-slice";
 
 const Dialog = () => {
+  const course = useSelector((state) => state.course);
+
   return (
     
   );
