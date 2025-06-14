@@ -12,6 +12,7 @@ const Dialog = () => {
   const course = useSelector((state) => state.course);
   const dispatch = useDispatch();
   const { setCourses, setError } = useRequestStates();
+  const COURSE_API = import.meta.env.VITE_COURSE_API;
 
   const imgPattern = /^https?:\/\/.*\.(?:png|jpg|jpeg|gif|webp|svg)$/;
   const pricePattern = /^[0-9]+K$/;
