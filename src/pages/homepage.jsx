@@ -94,6 +94,8 @@ const Homepage = () => {
                 />
             </Container>
         </Container>
+
+        <Divider />
       </Footer>
     </>
   );
