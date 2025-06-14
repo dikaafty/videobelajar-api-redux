@@ -9,6 +9,7 @@ import Container from "../components/container";
 import CardSectionDesc from "../components/card-section-desc";
 import CardSectionTabs from "../components/card-section-tabs";
 import Card from "../components/card";
+import CourseActionsBtn from "../components/course-actions-btn";
 import Newsletter from "../components/newsletter";
 import Footer from "../components/footer";
 import FooterBrandInfo from "../components/footer-brand-info";
