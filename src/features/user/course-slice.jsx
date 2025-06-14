@@ -24,9 +24,9 @@ const courseSlice = createSlice({
     setSelectedCourse: (state, action) => {
       state.selectedCourse = action.payload;
     },
-    handleEdit: (action) => {
-      setSelectedCourse(action.payload);
-      setIsOpen(true);
+    handleEdit: (state, action) => {
+      state.selectedCourse = action.payload,
+      state.isOpen = true
     },
     setCourseImg: (state, action) => {
       state.courseImg = action.payload;
