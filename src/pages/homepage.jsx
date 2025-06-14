@@ -36,6 +36,10 @@ const Homepage = () => {
 
       <Body>
         <Hero />
+
+        <Container className="w-full flex flex-col gap-6 sm:gap-8">
+          
+        </Container>
       </Body>
     </>
   );
