@@ -26,15 +26,16 @@ const Dialog = () => {
 
   useEffect(() => {
     if(course.selectedCourse) {
-      setCourseImg(course.selectedCourse.courseImg);
-      setCourseTitle(course.selectedCourse.courseTitle);
-      setCourseDescription(course.selectedCourse.courseDescription);
-      setCoursePrice(course.selectedCourse.coursePrice);
+      dispatch(setCourseImg(course.selectedCourse.courseImg));
+      dispatch(setCourseTitle(course.selectedCourse.courseTitle));
+      dispatch(setCourseDescription(course.selectedCourse.courseDescription));
+      dispatch(setCoursePrice(course.selectedCourse.coursePrice));
+      console.log(course.selectedCourse);
     } else {
-      setCourseImg("");
-      setCourseTitle("");
-      setCourseDescription("");
-      setCoursePrice("");
+      dispatch(setCourseImg(""));
+      dispatch(setCourseTitle(""));
+      dispatch(setCourseDescription(""));
+      dispatch(setCoursePrice(""));
     }
   }, [course.selectedCourse, course.isOpen]);
 
