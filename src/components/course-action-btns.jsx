@@ -3,3 +3,5 @@ const CourseActionBtns = ({ action }) => {
 
   );
 }
+
+export default CourseActionBtns;
