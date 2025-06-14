@@ -28,7 +28,9 @@ const Dialog = () => {
   }, [course.selectedCourse, course.isOpen]);
 
   return (
-    
+    <>
+      
+    </>
   );
 }
 
