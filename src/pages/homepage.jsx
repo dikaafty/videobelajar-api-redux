@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useFetchCourse } from "../services/api/fetch-course";
 import { setCourse } from "../features/user/course-slice";
+import Card from "../components/card";
 
 const Homepage = () => {
   const COURSE_API = import.meta.env.VITE_COURSE_API;
@@ -16,7 +17,9 @@ const Homepage = () => {
   }, [courses]);
 
   return (
-
+    <>
+      
+    </>
   );
 }
 
