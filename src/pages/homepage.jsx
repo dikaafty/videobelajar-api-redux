@@ -69,7 +69,10 @@ const Homepage = () => {
       </Body>
 
       <Footer>
-        
+        <Container
+          className="w-full flex flex-col lg:flex-row justify-between gap-4 sm:gap-8 lg:gap-5">
+            
+        </Container>
       </Footer>
     </>
   );
