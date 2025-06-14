@@ -202,19 +202,9 @@ const Dialog = () => {
                           )
                         );
                       } else {
-                        dispatch(createNewCourse({
-                          courseImg: course.courseImg,
-                          courseTitle: course.courseTitle,
-                          courseDescription: course.courseDescription,
-                          coursePrice: course.coursePrice
-                        }));
+                        dispatch(createNewCourse(newCourse));
 
-                        createPost(COURSE_API, {
-                          courseImg: course.courseImg,
-                          courseTitle: course.courseTitle,
-                          courseDescription: course.courseDescription,
-                          coursePrice: course.coursePrice
-                        }, setCourses, setError);
+                        createPost(COURSE_API, newCourse, setCourses, setError);
                       }
                       
                       dispatch(setSelectedCourse(null));
