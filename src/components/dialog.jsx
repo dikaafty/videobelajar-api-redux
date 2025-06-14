@@ -201,6 +201,13 @@ const Dialog = () => {
                           courseDescription: course.courseDescription,
                           coursePrice: course.coursePrice
                         }));
+
+                        createPost(COURSE_API, {
+                          courseImg: course.courseImg,
+                          courseTitle: course.courseTitle,
+                          courseDescription: course.courseDescription,
+                          coursePrice: course.coursePrice
+                        }, setCourses, setError);
                       }
                       
                       dispatch(setSelectedCourse(null));
