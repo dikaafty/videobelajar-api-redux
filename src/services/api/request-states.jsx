@@ -5,3 +5,5 @@ const useRequestStates = () => {
 
   return { courses, setCourses, error, setError, isLoading, setIsLoading };
 }
+
+export default useRequestStates;
