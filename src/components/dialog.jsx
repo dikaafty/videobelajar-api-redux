@@ -5,6 +5,7 @@ import {
    setCoursePrice, setSelectedCourse, setIsOpen
   } 
 from "../features/user/course-slice";
+import useRequestStates from "../services/api/request-states";
 
 const Dialog = () => {
   const course = useSelector((state) => state.course);
