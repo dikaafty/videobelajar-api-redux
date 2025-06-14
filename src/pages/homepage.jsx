@@ -45,7 +45,15 @@ const Homepage = () => {
           <Container
             className="w-full grid grid-cols-[1fr] sm:grid-cols-[repeat(auto-fit,_minmax(384px,_1fr))]
             grid-rows-[repeat(auto-fit,_minmax(0,_1fr))] place-items-center gap-y-5 sm:gap-y-8 gap-x-6">
-              
+              <Card id={1} />
+              <Card id={2} />
+              <Card id={3} />
+              <Card id={4} />
+              <Card id={5} />
+              <Card id={6} />
+              <Card id={7} />
+              <Card id={8} />
+              <Card id={9} />
           </Container>
         </Container>
       </Body>
