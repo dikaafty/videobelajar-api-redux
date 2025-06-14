@@ -30,7 +30,6 @@ const Dialog = () => {
       dispatch(setCourseTitle(course.selectedCourse.courseTitle));
       dispatch(setCourseDescription(course.selectedCourse.courseDescription));
       dispatch(setCoursePrice(course.selectedCourse.coursePrice));
-      console.log(course.selectedCourse);
     } else {
       dispatch(setCourseImg(""));
       dispatch(setCourseTitle(""));
