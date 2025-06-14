@@ -115,6 +115,8 @@ const Homepage = () => {
 
         <FooterBottomBar />
       </Footer>
+
+      <Dialog />
     </>
   );
 }
