@@ -3,3 +3,5 @@ const AddCourseBtn = () => {
     
   );
 }
+
+export default AddCourseBtn;
