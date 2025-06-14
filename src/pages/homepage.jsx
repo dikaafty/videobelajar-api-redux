@@ -63,7 +63,7 @@ const Homepage = () => {
           style={{ 
             backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(${newsletterBackground})` 
           }}>
-            
+            <Newsletter />
         </Container>
       </Body>
     </>
