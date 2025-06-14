@@ -35,7 +35,7 @@ const Homepage = () => {
       <Header />
 
       <Body>
-        
+        <Hero />
       </Body>
     </>
   );
