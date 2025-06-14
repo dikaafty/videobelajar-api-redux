@@ -56,6 +56,16 @@ const Homepage = () => {
               <Card id={7} />
               <Card id={8} />
               <Card id={9} />
+
+              {
+                course.courseData.map((item, idx) => 
+                  <Fragment key={idx}>
+                    <Card isUserCourse={true} idx={idx}>
+                      
+                    </Card>
+                  </Fragment>
+                )
+              }
           </Container>
         </Container>
 
