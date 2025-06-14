@@ -6,6 +6,7 @@ import {
   } 
 from "../features/user/course-slice";
 import useRequestStates from "../services/api/request-states";
+import createPost from "../services/api/post-course";
 
 const Dialog = () => {
   const course = useSelector((state) => state.course);
