@@ -56,6 +56,15 @@ const Homepage = () => {
               <Card id={9} />
           </Container>
         </Container>
+
+        <Container
+          className="w-full h-100 bg-center bg-cover bg-no-repeat rounded-sm px-5 
+          shadow-[0_12px_45px_-10px_#003BDE33] flex justify-center items-center"
+          style={{ 
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(${newsletterBackground})` 
+          }}>
+            
+        </Container>
       </Body>
     </>
   );
