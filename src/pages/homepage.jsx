@@ -4,6 +4,7 @@ import { useFetchCourse } from "../services/api/fetch-course";
 import { setCourse } from "../features/user/course-slice";
 import Header from "../components/header";
 import Body from "../components/body";
+import Hero from "../components/hero";
 import Card from "../components/card";
 
 const Homepage = () => {
