@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, Fragment } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useFetchCourse } from "../services/api/fetch-course";
 import { setCourse } from "../features/user/course-slice";
