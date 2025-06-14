@@ -7,5 +7,7 @@ import {
 from "../features/user/course-slice";
 
 const Dialog = () => {
-  
+  return (
+    
+  );
 }
