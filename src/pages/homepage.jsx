@@ -41,6 +41,12 @@ const Homepage = () => {
           <CardSectionDesc />
 
           <CardSectionTabs />
+
+          <Container
+            className="w-full grid grid-cols-[1fr] sm:grid-cols-[repeat(auto-fit,_minmax(384px,_1fr))]
+            grid-rows-[repeat(auto-fit,_minmax(0,_1fr))] place-items-center gap-y-5 sm:gap-y-8 gap-x-6">
+              
+          </Container>
         </Container>
       </Body>
     </>
