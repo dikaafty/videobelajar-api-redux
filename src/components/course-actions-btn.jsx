@@ -11,6 +11,8 @@ const CourseActionsBtn = ({ action, item, idx, itemId }) => {
   const COURSE_API = import.meta.env.VITE_COURSE_API;
   const editedCourse = useSelector((state) => state.course.editedCourse);
 
+  useEffect(() => {}, [editedCourse]);
+
   return (
     <button 
       onClick={action === "edit" ? 
