@@ -191,6 +191,13 @@ const Dialog = () => {
                         dispatch(setCourse(
                           course.courseData.map((item) => {
                             if(item === course.selectedCourse) {
+                              dispatch(setEditedCourse({
+                                ...item,
+                                courseImg: course.courseImg,
+                                courseTitle: course.courseTitle,
+                                courseDescription: course.courseDescription,
+                                coursePrice: course.coursePrice
+                              }));
                               return {
                                 ...item,
                                 courseImg: course.courseImg,
