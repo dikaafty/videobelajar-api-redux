@@ -5,6 +5,7 @@ const courseSlice = createSlice({
   initialState: {
     courseData: [],
     selectedCourse: null,
+    editedCourse: null,
     courseImg: "",
     courseTitle: "",
     courseDescription: "",
