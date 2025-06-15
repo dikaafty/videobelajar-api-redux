@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import useRequestStates from "../services/api/request-states";
 import deleteCourse from "../services/api/delete-course";
 
-const CourseActionsBtn = ({ action, item, idx }) => {
+const CourseActionsBtn = ({ action, item, idx, itemId }) => {
   const dispatch = useDispatch();
   const { setCourses, setError } = useRequestStates();
   const COURSE_API = import.meta.env.VITE_COURSE_API;
