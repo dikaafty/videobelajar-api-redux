@@ -188,28 +188,25 @@ const Dialog = () => {
                       pricePattern.test(course.coursePrice)
                     ) {
                       if(course.selectedCourse) {
-                        dispatch(setCourse(
-                          course.courseData.map((item) => {
-                            if(item === course.selectedCourse) {
-                              dispatch(setEditedCourse({
-                                ...item,
-                                courseImg: course.courseImg,
-                                courseTitle: course.courseTitle,
-                                courseDescription: course.courseDescription,
-                                coursePrice: course.coursePrice
-                              }));
-                              return {
-                                ...item,
-                                courseImg: course.courseImg,
-                                courseTitle: course.courseTitle,
-                                courseDescription: course.courseDescription,
-                                coursePrice: course.coursePrice
-                              }
-                            } else {
-                              return item;
+                        const updatedData = course.courseData.map((item) => {
+                          if(item === course.selectedCourse) {
+                            const updatedItem = {
+                              ...item,
+                              courseImg: course.courseImg,
+                              courseTitle: course.courseTitle,
+                              courseDescription: course.courseDescription,
+                              coursePrice: course.coursePrice
                             }
-                          })
-                        ));
+
+                            dispatch(setEditedCourse(updatedItem));
+
+                            return updatedItem;
+                          } else {
+                            return item;
+                          }
+                        });
+
+                        dispatch(setCourse(updatedData));
                       } else {
                         dispatch(createNewCourse(newCourse));
 
