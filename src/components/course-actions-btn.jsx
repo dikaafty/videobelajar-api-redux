@@ -11,10 +11,10 @@ const CourseActionsBtn = ({ action, item, idx }) => {
     <button 
       onClick={action === "edit" ? 
         () => {
-          dispatch(handleEdit(item))
+          dispatch(handleEdit(item));
         } : 
         () => {
-          dispatch(handleDelete(idx))
+          dispatch(handleDelete(idx));
         }
       } // not put or delete to API yet
       className={
