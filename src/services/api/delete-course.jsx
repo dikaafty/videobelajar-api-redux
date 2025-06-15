@@ -1,10 +1,10 @@
 import axios from "axios";
 
-const deleteCourse = async (url, idx, setCourses, setError) => {
+const deleteCourse = async (url, itemId, setCourses, setError) => {
   try {
-    const res = await axios.delete(`${url}/${idx}`);
+    const res = await axios.delete(`${url}/${itemId}`);
     const data = res.data;
-    setCourses(prev => prev.filter(course => course.id !== idx + 1));
+    setCourses(prev => prev.filter(course => course.id !== itemId + 1));
   } catch (err) {
     setError(err.message);
   }
