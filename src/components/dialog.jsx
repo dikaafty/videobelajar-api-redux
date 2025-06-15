@@ -189,17 +189,19 @@ const Dialog = () => {
                     ) {
                       if(course.selectedCourse) {
                         dispatch(setCourse(
-                          course.courseData.map((item) => 
-                          item === course.selectedCourse ? 
-                            {
-                              ...item,
-                              courseImg: course.courseImg,
-                              courseTitle: course.courseTitle,
-                              courseDescription: course.courseDescription,
-                              coursePrice: course.coursePrice
-                            } :
-                            item
-                          )
+                          course.courseData.map((item) => {
+                            if(item === course.selectedCourse) {
+                              return {
+                                ...item,
+                                courseImg: course.courseImg,
+                                courseTitle: course.courseTitle,
+                                courseDescription: course.courseDescription,
+                                coursePrice: course.coursePrice
+                              }
+                            } else {
+                              return item;
+                            }
+                          })
                         ));
                       } else {
                         dispatch(createNewCourse(newCourse));
