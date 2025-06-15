@@ -52,7 +52,7 @@ const courseSlice = createSlice({
 
 export const { 
   setCourse, createNewCourse, handleDelete, handleEdit, setSelectedCourse,
-  setCourseImg, setCourseTitle, setCourseDescription, setCoursePrice, setIsOpen
+  setCourseImg, setCourseTitle, setCourseDescription, setCoursePrice, setIsOpen, setEditedCourse
 } = courseSlice.actions;
 
 export default courseSlice.reducer;
