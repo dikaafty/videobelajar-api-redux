@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import useRequestStates from "../services/api/request-states";
 import deleteCourse from "../services/api/delete-course";
 import { useEffect } from "react";
+import updateCourse from "../services/api/update-course";
 
 const CourseActionsBtn = ({ action, item, idx, itemId }) => {
   const dispatch = useDispatch();
