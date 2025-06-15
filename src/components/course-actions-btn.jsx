@@ -5,6 +5,7 @@ import useRequestStates from "../services/api/request-states";
 const CourseActionsBtn = ({ action, item, idx }) => {
   const dispatch = useDispatch();
   const { setCourses, setError } = useRequestStates();
+  const COURSE_API = import.meta.env.VITE_COURSE_API;
 
   return (
     <button 
