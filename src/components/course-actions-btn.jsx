@@ -16,7 +16,7 @@ const CourseActionsBtn = ({ action, item, idx, itemId }) => {
         } : 
         () => {
           dispatch(handleDelete(idx));
-          deleteCourse(COURSE_API, idx, setCourses, setError);
+          deleteCourse(COURSE_API, itemId, setCourses, setError);
         }
       } // not put or delete to API yet
       className={

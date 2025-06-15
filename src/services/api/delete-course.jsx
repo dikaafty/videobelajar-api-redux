@@ -5,6 +5,7 @@ const deleteCourse = async (url, itemId, setCourses, setError) => {
     const res = await axios.delete(`${url}/${itemId}`);
     const data = res.data;
     setCourses(prev => prev.filter(course => course.id !== itemId));
+    console.log("Delete successful!", `${url}/${itemId}`);
   } catch (err) {
     setError(err.message);
   }
