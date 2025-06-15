@@ -1,6 +1,7 @@
 import { handleEdit, handleDelete } from "../features/user/course-slice";
 import { useDispatch } from "react-redux";
 import useRequestStates from "../services/api/request-states";
+import deleteCourse from "../services/api/delete-course";
 
 const CourseActionsBtn = ({ action, item, idx }) => {
   const dispatch = useDispatch();
