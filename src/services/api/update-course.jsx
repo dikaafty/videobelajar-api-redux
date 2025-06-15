@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const updateCourse = () => {
+const updateCourse = (url, item, itemId, setCourses, setError) => {
   
 }
 
