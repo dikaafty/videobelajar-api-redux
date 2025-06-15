@@ -4,6 +4,7 @@ import useRequestStates from "../services/api/request-states";
 
 const CourseActionsBtn = ({ action, item, idx }) => {
   const dispatch = useDispatch();
+  const { setCourses, setError } = useRequestStates();
 
   return (
     <button 
