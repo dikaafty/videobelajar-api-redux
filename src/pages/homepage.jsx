@@ -64,7 +64,7 @@ const Homepage = () => {
                       <Container 
                         className="w-full flex justify-end sm:justify-around max-sm:col-span-2 
                         max-sm:gap-2 *:max-sm:mt-1.5">
-                          <CourseActionsBtn action="edit" item={item} />
+                          <CourseActionsBtn action="edit" item={item} itemId={item.id} />
                           <CourseActionsBtn action="delete" idx={idx} itemId={item.id} />
                       </Container>
                     </Card>
