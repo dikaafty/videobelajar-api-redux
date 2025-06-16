@@ -18,7 +18,7 @@ const CourseActionsBtn = ({ action, item, idx, itemId }) => {
         dispatch(setSelectedCourse(null));
       }
     }
-  }, [editedCourse]);
+  }, [course.editedCourse]);
 
   return (
     <button 
