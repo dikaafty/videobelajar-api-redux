@@ -5,7 +5,6 @@ const createPost = async (url, newCourse, setCourses, setError) => {
     const res = await axios.post(url, newCourse);
     const data = res.data;
     setCourses(data);
-    console.log("Post data successfully!");
   } catch (err) {
     setError(err.message);
   }
