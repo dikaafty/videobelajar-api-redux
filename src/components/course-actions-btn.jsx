@@ -5,10 +5,11 @@ import deleteCourse from "../services/api/delete-course";
 import { useEffect } from "react";
 import updateCourse from "../services/api/update-course";
 
+const COURSE_API = import.meta.env.VITE_COURSE_API;
+
 const CourseActionsBtn = ({ action, item, idx, itemId }) => {
   const dispatch = useDispatch();
   const { setCourses, setError } = useRequestStates();
-  const COURSE_API = import.meta.env.VITE_COURSE_API;
   const course = useSelector((state) => state.course);
 
   useEffect(() => {
