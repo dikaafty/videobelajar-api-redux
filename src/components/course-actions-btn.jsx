@@ -12,8 +12,11 @@ const CourseActionsBtn = ({ action, item, idx, itemId }) => {
   const course = useSelector((state) => state.course);
 
   useEffect(() => {
-    if(itemId) {
-      updateCourse(COURSE_API, editedCourse, itemId, setCourses, setError);
+    if(item && course.selectedCourse) {
+      if(item.id === course.selectedCourse.id && itemId) {
+        updateCourse(COURSE_API, course.editedCourse, itemId, setCourses, setError);
+        dispatch(setSelectedCourse(null));
+      }
     }
   }, [editedCourse]);
 
