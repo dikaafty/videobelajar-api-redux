@@ -1,4 +1,4 @@
-import { handleEdit, handleDelete } from "../features/user/course-slice";
+import { setSelectedCourse, handleEdit, handleDelete } from "../features/user/course-slice";
 import { useDispatch, useSelector } from "react-redux";
 import useRequestStates from "../services/api/request-states";
 import deleteCourse from "../services/api/delete-course";
