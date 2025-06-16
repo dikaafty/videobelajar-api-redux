@@ -34,7 +34,7 @@
   display: none;
 }
 
-.cut-two-lines {
+@utility cut-two-lines {
   /* Cut line after more than 2 lines */
   display: -webkit-box;
   -webkit-box-orient: vertical;
