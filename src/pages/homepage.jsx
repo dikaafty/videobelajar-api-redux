@@ -20,8 +20,9 @@ import Dialog from "../components/dialog";
 import AddCourseBtn from "../components/add-course-btn";
 import newsletterBackground from "../assets/images/newsletter-background.jpeg";
 
+const COURSE_API = import.meta.env.VITE_COURSE_API;
+
 const Homepage = () => {
-  const COURSE_API = import.meta.env.VITE_COURSE_API;
   const { courses, error, isLoading } = useFetchCourse(COURSE_API);
   const dispatch = useDispatch();
   const course = useSelector((state) => state.course);
