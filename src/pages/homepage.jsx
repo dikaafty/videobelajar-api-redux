@@ -71,7 +71,7 @@ const Homepage = () => {
                   <p 
                     className="font-poppins text-2xl sm:text-[32px] font-semibold leading-[1.1] 
                     text-red-500">
-                      Error: `${error}`
+                      Error: {error}
                   </p>
                 ) : (
                   course.courseData.map((item, idx) => 
