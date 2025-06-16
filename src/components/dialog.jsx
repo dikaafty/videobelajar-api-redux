@@ -9,6 +9,8 @@ import useRequestStates from "../services/api/request-states";
 import createPost from "../services/api/post-course";
 
 const COURSE_API = import.meta.env.VITE_COURSE_API;
+const imgPattern = /^https?:\/\/.*\.(?:png|jpg|jpeg|gif|webp|svg)$/;
+const pricePattern = /^[0-9]+K$/;
 
 const Dialog = () => {
   const course = useSelector((state) => state.course);
@@ -22,9 +24,6 @@ const Dialog = () => {
     coursePrice: course.coursePrice,
     id: String(course.courseData.length + 1)
   }
-
-  const imgPattern = /^https?:\/\/.*\.(?:png|jpg|jpeg|gif|webp|svg)$/;
-  const pricePattern = /^[0-9]+K$/;
 
   useEffect(() => {
     if(course.selectedCourse) {
