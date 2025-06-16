@@ -8,11 +8,12 @@ from "../features/user/course-slice";
 import useRequestStates from "../services/api/request-states";
 import createPost from "../services/api/post-course";
 
+const COURSE_API = import.meta.env.VITE_COURSE_API;
+
 const Dialog = () => {
   const course = useSelector((state) => state.course);
   const dispatch = useDispatch();
   const { setCourses, setError } = useRequestStates();
-  const COURSE_API = import.meta.env.VITE_COURSE_API;
 
   const newCourse = {
     courseImg: course.courseImg,
