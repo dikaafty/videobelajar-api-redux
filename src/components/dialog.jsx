@@ -213,7 +213,6 @@ const Dialog = () => {
                         createPost(COURSE_API, newCourse, setCourses, setError);
                       }
                       
-                      dispatch(setSelectedCourse(null));
                       dispatch(setIsOpen(false));
                     }
                   }}
