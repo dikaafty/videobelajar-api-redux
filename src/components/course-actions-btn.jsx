@@ -9,7 +9,7 @@ const CourseActionsBtn = ({ action, item, idx, itemId }) => {
   const dispatch = useDispatch();
   const { setCourses, setError } = useRequestStates();
   const COURSE_API = import.meta.env.VITE_COURSE_API;
-  const editedCourse = useSelector((state) => state.course.editedCourse);
+  const course = useSelector((state) => state.course);
 
   useEffect(() => {
     if(itemId) {
