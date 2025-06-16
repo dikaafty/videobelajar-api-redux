@@ -18,7 +18,8 @@ const Dialog = () => {
     courseImg: course.courseImg,
     courseTitle: course.courseTitle,
     courseDescription: course.courseDescription,
-    coursePrice: course.coursePrice
+    coursePrice: course.coursePrice,
+    id: String(course.courseData.length + 1)
   }
 
   const imgPattern = /^https?:\/\/.*\.(?:png|jpg|jpeg|gif|webp|svg)$/;
