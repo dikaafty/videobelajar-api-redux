@@ -1,12 +1,52 @@
-# React + Vite
+# videobelajar Homepage with API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+videobelajar homepage is part of videobelajar website. Built with an interactivity to create, read, update and delete new courses and applying API logic ( REST API ) to fetch, post, update and delete data from the API server. This project is designed to train me to use Redux for managing global states and Axios to perform fetching, posting, updating, and deleting data from the API server.
 
-Currently, two official plugins are available:
+# Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Fully Responsive Design: Optimized for both mobile and desktop experiences.
 
-## Expanding the ESLint configuration
+- Create, Read, Update and Delete new courses.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Fetch, Post, Update and Delete data from API Server.
+
+- Simple Dashboard: Navigate easily between learning materials.
+
+# Tech Stack
+
+- HTML
+
+- CSS
+
+- Tailwind
+
+- Javascript
+
+- React
+
+- Redux
+
+- Axios
+
+# Credits
+
+Images Credits :
+
+- [Medium](https://medium.com/)
+
+- [Shutterstock](https://www.shutterstock.com/)
+
+- [Alt School Africa](https://altschoolafrica.com/)
+
+- [GeeksforGeeks](https://www.geeksforgeeks.org/)
+
+- [freeCodeCamp](https://www.freecodecamp.org/)
+
+All credit goes to Harisenin Full-stack Developer Bootcamp for assisting me with my journey.
+
+# Contacts
+
+For any inquiries or suggestions, feel free to reach out:
+
+- GitHub : [dikaafty](https://github.com/dikaafty)
+- Email : dikaafty@gmail.com
