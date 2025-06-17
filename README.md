@@ -33,6 +33,7 @@ videobelajar homepage is part of videobelajar website. Built with an interactivi
 - Axios
 
 # Credits
+All credit goes to Harisenin Full-stack Developer Bootcamp for assisting me with my journey.
 
 Images Credits :
 
@@ -45,8 +46,6 @@ Images Credits :
 - [GeeksforGeeks](https://www.geeksforgeeks.org/)
 
 - [freeCodeCamp](https://www.freecodecamp.org/)
-
-All credit goes to Harisenin Full-stack Developer Bootcamp for assisting me with my journey.
 
 # Contacts
 
