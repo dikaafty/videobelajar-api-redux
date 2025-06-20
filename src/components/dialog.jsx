@@ -45,7 +45,7 @@ const Dialog = () => {
     courseTitle: course.courseTitle,
     courseDescription: course.courseDescription,
     coursePrice: course.coursePrice,
-    id: String(course.courseData.length + 1)
+    id: getNewCourseId()
   }
 
   return (
