@@ -39,6 +39,15 @@ const Dialog = () => {
     }
   }, [course.selectedCourse, course.isOpen]);
 
+  const getNewCourseId = () => {
+    if(!course.courseData | course.courseData === 0) {
+      return 1;
+    }
+
+    const maxId = Math.max(...course.courseData.map(item => Number(item.id)));
+    return maxId + 1;
+  }
+
   return (
     <>
       { course.isOpen && (
