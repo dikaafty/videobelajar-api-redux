@@ -17,14 +17,6 @@ const Dialog = () => {
   const dispatch = useDispatch();
   const { setCourses, setError } = useRequestStates();
 
-  const newCourse = {
-    courseImg: course.courseImg,
-    courseTitle: course.courseTitle,
-    courseDescription: course.courseDescription,
-    coursePrice: course.coursePrice,
-    id: String(course.courseData.length + 1)
-  }
-
   useEffect(() => {
     if(course.selectedCourse) {
       dispatch(setCourseImg(course.selectedCourse.courseImg));
@@ -46,6 +38,14 @@ const Dialog = () => {
 
     const maxId = Math.max(...course.courseData.map(item => Number(item.id)));
     return maxId + 1;
+  }
+
+  const newCourse = {
+    courseImg: course.courseImg,
+    courseTitle: course.courseTitle,
+    courseDescription: course.courseDescription,
+    coursePrice: course.coursePrice,
+    id: String(course.courseData.length + 1)
   }
 
   return (
