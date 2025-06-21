@@ -1,10 +1,10 @@
-# videobelajar Homepage with API
+# videobelajar homepage API Redux
 
 videobelajar homepage is part of videobelajar website. Built with an interactivity to create, read, update and delete new courses and applying API logic ( REST API ) to fetch, post, update and delete data from the API server. This project is designed to train me to use Redux for managing global states and Axios to perform fetching, posting, updating, and deleting data from the API server.
 
 # Demo
 
-[Live Site](https://videobelajar-homepage-with-api.netlify.app/)
+[Live Site](https://videobelajar-api-redux.netlify.app/)
 
 # Features
 
