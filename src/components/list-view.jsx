@@ -12,6 +12,12 @@ const ListView = () => {
   const { courses, error, isLoading } = useFetchCourse(COURSE_API);
   const dispatch = useDispatch();
   const course = useSelector((state) => state.course);
+
+  useEffect(() => {
+    if(courses) {
+      dispatch(setCourse(courses));
+    }
+  }, [courses]);
 }
 
 export default ListView;
