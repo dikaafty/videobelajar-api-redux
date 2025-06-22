@@ -9,7 +9,7 @@ import CourseActionsBtn from "./course-actions-btn";
 const COURSE_API = import.meta.env.VITE_COURSE_API;
 
 const ListView = () => {
-  
+  const { courses, error, isLoading } = useFetchCourse(COURSE_API);
 }
 
 export default ListView;
