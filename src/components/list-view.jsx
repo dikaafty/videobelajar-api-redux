@@ -3,5 +3,6 @@ import { useEffect, Fragment } from "react";
 import { useFetchCourse } from "../services/api/fetch-course";
 import Card from "./card";
 import Container from "./container";
+import CourseActionsBtn from "./course-actions-btn";
 
 const COURSE_API = import.meta.env.VITE_COURSE_API;
