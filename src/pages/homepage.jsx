@@ -17,7 +17,6 @@ import AddCourseBtn from "../components/add-course-btn";
 import newsletterBackground from "../assets/images/newsletter-background.jpeg";
 
 const Homepage = () => {
-  const dispatch = useDispatch();
   const course = useSelector((state) => state.course);
 
   useEffect(() => {
