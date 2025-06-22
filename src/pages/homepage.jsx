@@ -1,4 +1,3 @@
-import { setCourse } from "../features/user/course-slice";
 import Header from "../components/header";
 import Body from "../components/body";
 import Hero from "../components/hero";
