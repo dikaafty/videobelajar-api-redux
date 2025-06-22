@@ -42,7 +42,7 @@ const Homepage = () => {
               <Card id={8} />
               <Card id={9} />
 
-              
+              <ListView />
           </Container>
         </Container>
 
