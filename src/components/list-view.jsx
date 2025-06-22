@@ -11,3 +11,5 @@ const COURSE_API = import.meta.env.VITE_COURSE_API;
 const ListView = () => {
   
 }
+
+export default ListView;
